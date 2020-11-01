@@ -8,7 +8,7 @@ public class JuegoPuzzle extends JFrame implements ActionListener {
 	
 	JuegoPuzzle()
 	{
-		btn1 = new JButton("1");
+		btn1 = new JButton("4");
 		btn1.setBounds(50, 50, 50, 50);
 		btn1.addActionListener(this);
 		btn1.setFocusable(false);
@@ -23,12 +23,12 @@ public class JuegoPuzzle extends JFrame implements ActionListener {
 		btn3.addActionListener(this);
 		btn3.setFocusable(false);
 		add(btn3);
-		btn4 = new JButton("4");
+		btn4 = new JButton("1");
 		btn4.setBounds(200, 50, 50, 50);
 		btn4.addActionListener(this);
 		btn4.setFocusable(false);
 		add(btn4);
-		btn5 = new JButton("5");
+		btn5 = new JButton("9");
 		btn5.setBounds(250, 50, 50, 50);
 		btn5.addActionListener(this);
 		btn5.setFocusable(false);
@@ -49,12 +49,12 @@ public class JuegoPuzzle extends JFrame implements ActionListener {
 		btn8.addActionListener(this);
 		btn8.setFocusable(false);
 		add(btn8);
-		btn9 = new JButton("9");
+		btn9 = new JButton("5");
 		btn9.setBounds(200, 100, 50, 50);
 		btn9.addActionListener(this);
 		btn9.setFocusable(false);
 		add(btn9);
-		btn10 = new JButton("10");
+		btn10 = new JButton("13");
 		btn10.setBounds(250, 100, 50, 50);
 		btn10.addActionListener(this);
 		btn10.setFocusable(false);
@@ -70,17 +70,17 @@ public class JuegoPuzzle extends JFrame implements ActionListener {
 		btn12.addActionListener(this);
 		btn12.setFocusable(false);
 		add(btn12);
-		btn13 = new JButton("13");
+		btn13 = new JButton("10");
 		btn13.setBounds(150, 150, 50, 50);
 		btn13.addActionListener(this);
 		btn13.setFocusable(false);
 		add(btn13);
-		btn14 = new JButton("14");
+		btn14 = new JButton("15");
 		btn14.setBounds(200, 150, 50, 50);
 		btn14.addActionListener(this);
 		btn14.setFocusable(false);
 		add(btn14);
-		btn15 = new JButton("15");
+		btn15 = new JButton("14");
 		btn15.setBounds(250, 150, 50, 50);
 		btn15.addActionListener(this);
 		btn15.setFocusable(false);
@@ -117,7 +117,7 @@ public class JuegoPuzzle extends JFrame implements ActionListener {
 		btn21.addActionListener(this);
 		btn21.setFocusable(false);
 		add(btn21);
-		btn22 = new JButton("22");
+		btn22 = new JButton(" ");
 		btn22.setBounds(100, 250, 50, 50);
 		btn22.addActionListener(this);
 		btn22.setFocusable(false);
@@ -127,12 +127,12 @@ public class JuegoPuzzle extends JFrame implements ActionListener {
 		btn23.addActionListener(this);
 		btn23.setFocusable(false);
 		add(btn23);
-		btn24 = new JButton("24");
+		btn24 = new JButton("22");
 		btn24.setBounds(200, 250, 50, 50);
 		btn24.addActionListener(this);
 		btn24.setFocusable(false);
 		add(btn24);
-		btn25 = new JButton(" ");
+		btn25 = new JButton("24");
 		btn25.setBounds(250, 250, 50, 50);
 		btn25.addActionListener(this);
 		btn25.setFocusable(false);
@@ -174,7 +174,6 @@ public class JuegoPuzzle extends JFrame implements ActionListener {
 	{
 		if (e.getSource() == btnN)
 		{
-			JOptionPane.showMessageDialog(JuegoPuzzle.this, "Nuevo juego");
 			this.hide();
 			JuegoPuzzle juego2 = new JuegoPuzzle();
 		}
@@ -400,7 +399,7 @@ public class JuegoPuzzle extends JFrame implements ActionListener {
 					}
 					else
 					{
-						if(btn13.getText()=="")
+						if(btn13.getText()==" ")
 						{
 							btn13.setText(txt);
 							btn8.setText(" ");
@@ -573,7 +572,7 @@ public class JuegoPuzzle extends JFrame implements ActionListener {
 					}
 					else
 					{
-						if(btn18.getText()=="")
+						if(btn18.getText()==" ")
 						{
 							btn18.setText(txt);
 							btn13.setText(" ");
@@ -746,7 +745,7 @@ public class JuegoPuzzle extends JFrame implements ActionListener {
 					}
 					else
 					{
-						if(btn23.getText()=="")
+						if(btn23.getText()==" ")
 						{
 							btn23.setText(txt);
 							btn18.setText(" ");
